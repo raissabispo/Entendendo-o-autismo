@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Merienda:wght@300..900&family=Sevillana&display=swap');
+:root{
+    --color-background: #4B3828;
+    --color-text:#FFF8E1;
+    --color-contrast: #B8860B;
+    --color-rose: #ff9a5f;
+
+}
+body{ 
+    background-image: url('img/img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    font-family: "Baskervville SC", serif;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+    font-size: 2.5rem; 
+    color: var(--color-rose); 
+    text-align: center; 
+    letter-spacing: 0.4rem; 
+    background: var(--color-background); 
+    border-radius: 10rem; 
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Estiliza as seções da página */
+section {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 3rem; 
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    width: 30rem; 
+    border: none; 
+    padding: 1rem; 
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-background);
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    padding: 0.8rem 1.2rem;
+    border: none; 
+    border-radius: 1.5rem; 
+    background-color: var(--color-rose);
+    color: var(--color-background); 
+    font-size: 1rem; 
+    cursor: pointer; 
+}
+
+/* Adiciona efeito hover ao botão de pesquisa */
+section button:hover {
+    background-color:var(--color-text); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 60rem;
+    height: 46vh;
+    overflow-y: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.6rem; 
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    background: var(--color-rose); 
+    border-radius: 0.6rem; 
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem; 
+    color: var(--color-text);
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none;
+    color: var(--color-background);
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline;
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: var(--color-background); 
+    margin: 0.5rem 0; 
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    background-color: var(--color-text);
+    color: var(--color-background); 
+    text-align: center; 
+    padding: 0; 
+    width: 100%; 
+    position: absolute; 
+    bottom: 0; 
+    font-size: 1rem; 
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+
+    section input {
+        width: 20rem;
+        padding: 0.8rem;
+    }
+
+    .resultados-pesquisa {
+        width: 25rem;
+        height: 40vh;
+    }
+
+    .item-resultado h2 {
+        font-size: 1rem; /
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem; 
+        letter-spacing: 0.1rem; 
+    }
+
+    section input {
+        width: 17rem;
+    }
+
+    section button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .resultados-pesquisa {
+        width: 90%; 
+        height: 50vh; 
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem; 
+    }
+
+    footer {
+        font-size: 0.9rem; 
+    }
+}
