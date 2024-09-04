@@ -29,7 +29,7 @@ Este projeto foi desenvolvido com o objetivo de aplicar os conhecimentos adquiri
 As principais funcionalidades planejadas para o projeto incluem:
 
 - **Visualização de livros**: Lista de livros disponíveis na biblioteca.
-- **Pesquisa**: Barra de pesquisa para filtrar livros pelo título ou autor.
+- **Pesquisa**: Barra de pesquisa para filtrar livros pelo título.
 - **Detalhes do livro**: Página com informações  de cada livro.
   
 *Nota: Essas funcionalidades estão em desenvolvimento e serão implementadas nas próximas fases do projeto.*
