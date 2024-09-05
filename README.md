@@ -10,6 +10,7 @@ Projeto desenvolvido durante a **Imersão Alura com o Gemimi**, uma série de au
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Funcionalidades](#funcionalidades)
 - [Como Executar o Projeto](#como-executar-o-projeto)
+- [Como acessar](#como-acessar)
 - [Status do Projeto](#status-do-projeto)
 - [Contribuição](#contribuição)
 - [Contato](#contato)
@@ -49,6 +50,10 @@ As principais funcionalidades planejadas para o projeto incluem:
 
 *Nota: Este projeto não requer dependências externas para ser executado, pois utiliza apenas HTML, CSS e JavaScript.*
 
+##Como acessar 
+
+- link: https://raissabispo.github.io/Entendendo-o-autismo/
+  
 ## Status do Projeto
 
 - **Em desenvolvimento**: O projeto ainda está em fase de desenvolvimento, com algumas funcionalidades ainda não implementadas.
