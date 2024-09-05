@@ -1,6 +1,6 @@
 
 
-# Biblioteca 
+# Diferentes Níveis do Autismo
 
 Projeto desenvolvido durante a **Imersão Alura com o Gemimi**, uma série de aulas online oferecidas pela Alura para aprender e desenvolver habilidades em HTML, CSS e JavaScript.
 
@@ -16,7 +16,7 @@ Projeto desenvolvido durante a **Imersão Alura com o Gemimi**, uma série de au
 
 ## Sobre o Projeto
 
-Este projeto foi desenvolvido com o objetivo de aplicar os conhecimentos adquiridos durante a Imersão Alura com o Gemimi. A Biblioteca permitirá aos usuários explorar os livros.
+Este projeto foi desenvolvido com o objetivo de educar e informar o público sobre os diferentes níveis do Transtorno do Espectro Autista. O site apresentará informações detalhadas sobre os níveis de autismo e suas características.
 
 ## Tecnologias Utilizadas
 
@@ -28,10 +28,7 @@ Este projeto foi desenvolvido com o objetivo de aplicar os conhecimentos adquiri
 
 As principais funcionalidades planejadas para o projeto incluem:
 
-- **Visualização de livros**: Lista de livros disponíveis na biblioteca.
-- **Pesquisa**: Barra de pesquisa para filtrar livros pelo título.
-- **Detalhes do livro**: Página com informações  de cada livro.
-  
+- **Informações: Explicações sobre o espectro autista e seus diferentes níveis.
 *Nota: Essas funcionalidades estão em desenvolvimento e serão implementadas nas próximas fases do projeto.*
 
 ## Como Executar o Projeto
@@ -39,13 +36,13 @@ As principais funcionalidades planejadas para o projeto incluem:
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/biblioteca.git
+   git clone https://github.com/seu-usuario/entendendo-autismo.git
    ```
 
 2. Navegue até o diretório do projeto:
 
    ```bash
-   cd biblioteca
+   cd entendendo-autismo
    ```
 
 3. Abra o arquivo `index.html` no navegador para visualizar o projeto.
@@ -64,10 +61,13 @@ Contribuições são bem-vindas! Se você deseja contribuir, por favor siga os p
 2. Crie uma nova branch para a funcionalidade que você deseja adicionar.
 3. Faça as suas alterações e crie um pull request.
 
-
 ## Contato
 
 Para mais informações ou dúvidas, você pode entrar em contato:
 
 - **Nome:** Raissa
 - **E-mail:** raissavt59@gmail.com
+
+---
+
+Essa estrutura mantém o formato original do README, mas adapta o conteúdo para o novo tema.
