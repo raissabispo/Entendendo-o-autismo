@@ -72,7 +72,3 @@ Para mais informações ou dúvidas, você pode entrar em contato:
 
 - **Nome:** Raissa
 - **E-mail:** raissavt59@gmail.com
-
----
-
-Essa estrutura mantém o formato original do README, mas adapta o conteúdo para o novo tema.
