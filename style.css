@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Merienda:wght@300..900&family=Sevillana&display=swap');
-:root{
-    --color-background: #4B3828;
-    --color-text:#FFF8E1;
-    --color-contrast: #B8860B;
-    --color-rose: #ff9a5f;
+:root {
+    --color-primary: #428bca; /* Azul tradicional do autismo */
+    --color-secondary: #3498db; /* Azul mais claro */
+    --color-tertiary: #2ecc71; /* Verde */
+    --color-text: #fff;
+  }
 
-}
-body{ 
-    background-image: url('img/img.png');
+  body { 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -17,23 +16,39 @@ body{
     flex-direction: column; 
     align-items: center; 
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh; 
     margin: 0;
     padding: 0;
+    justify-content: space-between;
+    position: relative; 
+  }
+body::before {
+    content: '';
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('img/img.png') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.3; 
 }
+
 
 /* Estiliza os títulos h1 */
 h1 {
     font-size: 2.5rem; 
-    color: var(--color-rose); 
+    color: var(--color-text); 
     text-align: center; 
     letter-spacing: 0.4rem; 
-    background: var(--color-background); 
+    background: var(--color-primary); 
     border-radius: 10rem; 
     padding: 1rem;
     margin-bottom: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
+
 
 /* Estiliza as seções da página */
 section {
@@ -60,15 +75,15 @@ section button {
     padding: 0.8rem 1.2rem;
     border: none; 
     border-radius: 1.5rem; 
-    background-color: var(--color-rose);
-    color: var(--color-background); 
+    background-color: var(--color-tertiary);
+    color: var(--color-text); 
     font-size: 1rem; 
     cursor: pointer; 
 }
 
 /* Adiciona efeito hover ao botão de pesquisa */
 section button:hover {
-    background-color:var(--color-text); 
+    background-color:var(--color-secondary); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
@@ -84,7 +99,7 @@ section button:hover {
 
 /* Estiliza cada item de resultado */
 .item-resultado {
-    background: var(--color-rose); 
+    background: var(--color-secondary); 
     border-radius: 0.6rem; 
     padding: 1rem;
     margin-bottom: 1rem;
@@ -100,30 +115,36 @@ section button:hover {
 /* Estiliza os links dentro dos itens de resultado */
 .item-resultado a {
     text-decoration: none;
-    color: var(--color-background);
+    color: var(--color-text);
 }
 
 /* Estiliza os links quando são passados o mouse sobre */
 .item-resultado a:hover {
     text-decoration: underline;
+    background-color: var(--color-secondary);
 }
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
-    color: var(--color-background); 
+    color: var(--color-text); 
     margin: 0.5rem 0; 
+}
+
+.img2{
+    width: 20%;
 }
 
 /* Estiliza o rodapé da página */
 footer {
-    background-color: var(--color-text);
-    color: var(--color-background); 
+    background-color: var(--color-tertiary);
+    color: var(--color-text); 
     text-align: center; 
     padding: 0; 
     width: 100%; 
     position: absolute; 
     bottom: 0; 
     font-size: 1rem; 
+    position: fixed;
 }
 
 @media (max-width: 768px) {
@@ -145,13 +166,17 @@ footer {
     .item-resultado h2 {
         font-size: 1rem; /
     }
+
+    .img2{
+        width: 40vh;
+    }
 }
 
 /* Responsividade para celulares */
 @media (max-width: 480px) {
 
     h1 {
-        font-size: 1.8rem; 
+        font-size: 1.5rem; 
         letter-spacing: 0.1rem; 
     }
 
@@ -174,6 +199,6 @@ footer {
     }
 
     footer {
-        font-size: 0.9rem; 
+        font-size: 0.8rem; 
     }
 }
