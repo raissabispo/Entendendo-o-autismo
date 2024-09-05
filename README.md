@@ -50,7 +50,7 @@ As principais funcionalidades planejadas para o projeto incluem:
 
 *Nota: Este projeto não requer dependências externas para ser executado, pois utiliza apenas HTML, CSS e JavaScript.*
 
-##Como acessar 
+## Como acessar 
 
 - link: https://raissabispo.github.io/Entendendo-o-autismo/
   
