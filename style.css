@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Merienda:wght@300..900&family=Sevillana&display=swap');
+
 :root {
     --color-primary: #428bca; /* Azul tradicional do autismo */
     --color-secondary: #3498db; /* Azul mais claro */
     --color-tertiary: #2ecc71; /* Verde */
     --color-text: #fff;
-  }
+    --color-error:#ff5f5f;
+}
 
-  body { 
+body { 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -19,9 +21,9 @@
     min-height: 100vh; 
     margin: 0;
     padding: 0;
-    justify-content: space-between;
     position: relative; 
-  }
+}
+
 body::before {
     content: '';
     position: fixed; 
@@ -35,7 +37,6 @@ body::before {
     opacity: 0.3; 
 }
 
-
 /* Estiliza os títulos h1 */
 h1 {
     font-size: 2.5rem; 
@@ -48,7 +49,6 @@ h1 {
     margin-bottom: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
-
 
 /* Estiliza as seções da página */
 section {
@@ -65,7 +65,6 @@ section input {
     padding: 1rem; 
     border-radius: 1.5rem;
     margin-bottom: 1rem;
-    color: var(--color-background);
     font-size: 1rem;
     box-sizing: border-box;
 }
@@ -83,7 +82,7 @@ section button {
 
 /* Adiciona efeito hover ao botão de pesquisa */
 section button:hover {
-    background-color:var(--color-secondary); 
+    background-color: var(--color-secondary); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
@@ -100,10 +99,27 @@ section button:hover {
 /* Estiliza cada item de resultado */
 .item-resultado {
     background: var(--color-secondary); 
+    color: var(--color-text);
     border-radius: 0.6rem; 
     padding: 1rem;
     margin-bottom: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.mensagem-erro {
+    background: var(--color-error); 
+    color: var(--color-text);
+    border-radius: 0.6rem; 
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+}
+
+/* Adiciona um espaçamento no topo da mensagem de erro */
+.mensagem-erro p {
+    margin: 0;
+    font-size: 1rem;
 }
 
 /* Estiliza os títulos dentro dos itens de resultado */
@@ -130,7 +146,7 @@ section button:hover {
     margin: 0.5rem 0; 
 }
 
-.img2{
+.img2 {
     width: 20%;
 }
 
@@ -141,10 +157,9 @@ footer {
     text-align: center; 
     padding: 0; 
     width: 100%; 
-    position: absolute; 
+    position: fixed;
     bottom: 0; 
     font-size: 1rem; 
-    position: fixed;
 }
 
 @media (max-width: 768px) {
@@ -164,17 +179,16 @@ footer {
     }
 
     .item-resultado h2 {
-        font-size: 1rem; /
+        font-size: 1rem;
     }
 
-    .img2{
+    .img2 {
         width: 40vh;
     }
 }
 
 /* Responsividade para celulares */
 @media (max-width: 480px) {
-
     h1 {
         font-size: 1.5rem; 
         letter-spacing: 0.1rem; 
