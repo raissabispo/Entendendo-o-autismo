@@ -29,7 +29,7 @@ Este projeto foi desenvolvido com o objetivo de educar e informar o público sob
 
 As principais funcionalidades planejadas para o projeto incluem:
 
-- **Informações: Explicações sobre o espectro autista e seus diferentes níveis.
+- **Informações**: Explicações sobre o espectro autista e seus diferentes níveis.
 *Nota: Essas funcionalidades estão em desenvolvimento e serão implementadas nas próximas fases do projeto.*
 
 ## Como Executar o Projeto
