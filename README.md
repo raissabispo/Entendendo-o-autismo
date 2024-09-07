@@ -37,13 +37,13 @@ As principais funcionalidades planejadas para o projeto incluem:
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/entendendo-autismo.git
+   git clone https://github.com/seu-usuario/entendendo-o-autismo.git
    ```
 
 2. Navegue até o diretório do projeto:
 
    ```bash
-   cd entendendo-autismo
+   cd entendendo-0-autismo
    ```
 
 3. Abra o arquivo `index.html` no navegador para visualizar o projeto.
@@ -52,7 +52,7 @@ As principais funcionalidades planejadas para o projeto incluem:
 
 ## Como acessar 
 
-- link: https://raissabispo.github.io/Entendendo-o-autismo/
+- link: https://entendendo-o-autismo.vercel.app/
   
 ## Status do Projeto
 
