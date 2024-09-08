@@ -33,7 +33,7 @@ function pesquisar() {
                   <p><strong>Comorbidades:</strong> ${nivel.comorbidades}</p>
                   <p><strong>Tratamentos:</strong> ${nivel.tratamentos}</p>
                   <p><strong>Prognóstico:</strong> ${nivel.prognostico}</p>
-                  <a href="${nivel.link}" target="_blank">Mais informações</a>
+                  <a href="${nivel.link}" target="_blank"><strong>Mais informações</strong></a>
               </div>
           `;
       }
